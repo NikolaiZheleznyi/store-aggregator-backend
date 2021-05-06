@@ -1,7 +1,7 @@
 from django.db import models
 
 class ProviderModel(models.Model):
-    name = models.CharField
-    created = models.DateField
+    name = models.CharField(max_length=100)
+    created = models.DateTimeField()
 
 
